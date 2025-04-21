@@ -49,3 +49,7 @@ Output: Binding efficacy (float or % neutralization)
 Input: Binding efficacy (float)
 Output: New design params (dict or config file)
 ```
+
+## Notes
+- UniProt ID: protein sequence (FASTA)
+- PDB ID: protein structure (3D atomic coordinates)

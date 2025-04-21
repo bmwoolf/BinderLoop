@@ -1,6 +1,6 @@
 """
-PDB (Protein Data Bank) structure IDs for various protein complexes and toxins.
-See: https://www.rcsb.org/
+PDB structure IDs for various protein complexes and toxins from the paper for the initial version.
+See: https://www.wwpdb.org/
 """
 
 PDB_STRUCTURES = {

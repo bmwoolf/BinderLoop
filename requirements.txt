@@ -1,4 +1,14 @@
-colabfold[alphafold]
-biopython
+# Core dependencies with specific versions
+numpy>=1.25,<2.0.0        # Compatible with both JAX and ColabFold
+jax>=0.6.0                # Will automatically use Metal on Apple Silicon
+jaxlib>=0.6.0             # Required by JAX
+dm-haiku==0.0.10          # Required by ColabFold
+colabfold[alphafold]>=1.5.5  # Main package with AlphaFold dependencies
+tensorflow-macos<2.14.0   # Required by ColabFold
+
+# Testing
 pytest
 pytest-cov
+
+# Utilities
+biopython<1.83            # For handling FASTA files

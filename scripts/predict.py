@@ -12,13 +12,13 @@ def run_structure_prediction(sequence: str, name: str, output_dir: str = "output
     with open(fasta_path, "w") as f:
         f.write(f">{name}\n{sequence}\n")
 
-    # Call ColabFold’s CLI (colabfold_batch) from Python since it's not natively available in Python
+    # Call ColabFold's CLI with Metal acceleration
     subprocess.run([
         "colabfold_batch",
         str(fasta_path),
         str(output_path),
         "--num-recycle", "3",
-        "--use-gpu-relax"
+        "--use-gpu"  # This will use Metal on Apple Silicon
     ], check=True)
 
     final_model = output_path / "ranked_0.pdb"

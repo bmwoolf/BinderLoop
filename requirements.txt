@@ -1,0 +1,4 @@
+colabfold
+biopython
+pytest
+pytest-cov

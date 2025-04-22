@@ -21,4 +21,9 @@ def run_structure_prediction(sequence: str, name: str, output_dir: str = "output
         "--use-gpu-relax"
     ], check=True)
 
-    return str(output_path / "ranked_0.pdb")
+    final_model = output_path / "ranked_0.pdb"
+    
+    if not final_model.exists():
+        raise FileNotFoundError(f"No ranked_0.pdb found in {output_path}")
+    return str(final_model)
+    

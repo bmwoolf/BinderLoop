@@ -3,7 +3,7 @@
 # BinderLoop
 End to end, closed loop, de novo binder generation for any molecule in computational space.
 
-## Pipeline 
+## Pipeline
 ```bash
 # Step 1: Get toxin sequence manually from UniProt
 Input: UniProt ID (str)

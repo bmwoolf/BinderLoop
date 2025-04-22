@@ -50,6 +50,23 @@ Input: Binding efficacy (float)
 Output: New design params (dict or config file)
 ```
 
+## Running locally  
+```bash
+python3.10 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
+## Testing
+```
+# Run tests
+pytest
+
+# Run tests with coverage
+pytest --cov=models --cov-report=html
+```
+
 ## Notes
 - UniProt ID: protein sequence (FASTA)
 - PDB ID: protein structure (3D atomic coordinates)
+- setup.py is used to create a package that can be installed with pip

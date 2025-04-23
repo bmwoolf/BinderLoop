@@ -75,3 +75,9 @@ pytest --cov=models --cov-report=html
 - UniProt ID: protein sequence (FASTA)
 - PDB ID: protein structure (3D atomic coordinates)
 - setup.py is used to create a package that can be installed with pip
+- AF2 downloads weights to run prediction locally 
+- alphafold2_ptm = version of AF2 with predicted TM-score, which is a confidence score. ColabFold auto-downloads these
+- all of this is happening locally on the backend server
+- ptxas is a lib that is needed to compile models for the GPU at runtime
+- ColabFold uses ptxas at runtime to compile GPU kernels optimized for your hardware + input
+- XLA = accelerated linear algebra, JAX's backend that makes models run fast on GPUs by compiling operations (matmul, conv2d, relu, softmax, etc.)

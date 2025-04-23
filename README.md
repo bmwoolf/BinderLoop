@@ -3,6 +3,11 @@
 # BinderLoop
 End to end, closed loop, de novo binder generation for any molecule in computational space.
 
+## What are we trying to measure?
+A good question to ask is: "What are we trying to measure?" What do we need to use in order to measure this effectively? What is the point of this pipeline, and what can we measure that we can't do effectively with other methods?
+
+TODO: answer these questions
+
 ## Pipeline
 ```bash
 # Step 1: Get toxin sequence manually from UniProt

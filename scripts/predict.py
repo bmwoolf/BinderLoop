@@ -1,10 +1,15 @@
 import os 
-import subprocess
-from pathlib import Path
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+server_url = os.getenv("SERVER_URL")
+print("server_url", server_url)
 
 # Meta pipeline manager- we can eventually move to something like Airflow
 # Send the sequence to ColabFold
-def run_structure_prediction(sequence: str, name: str, output_dir: str = "outputs") -> str:
+def run_structure_prediction(sequence: str, name: str) -> str:
     """
     Sends a structure prediction request to a ColabFold server.
     Arguments:

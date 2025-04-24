@@ -81,3 +81,12 @@ pytest --cov=models --cov-report=html
 - ptxas is a lib that is needed to compile models for the GPU at runtime
 - ColabFold uses ptxas at runtime to compile GPU kernels optimized for your hardware + input
 - XLA = accelerated linear algebra, JAX's backend that makes models run fast on GPUs by compiling operations (matmul, conv2d, relu, softmax, etc.)
+- PDB 7Z14, the ScNtx complex, has 5 parts- 
+    - Chain	Description	                                Type
+    - A, D	Acetylcholine receptor subunit alpha	    Receptor (host target)
+    - B	    Acetylcholine receptor subunit beta	        Receptor
+    - C	    Acetylcholine receptor subunit delta	    Receptor
+    - E	    Acetylcholine receptor subunit gamma	    Receptor
+    - F, G	Consensus short-chain α-neurotoxin (ScNtx)	Toxin (ligand)
+- Chain F (and G) are both the ScNtx toxin, the actual target we want to neutralize- the others are host receptor subunits
+- authors focused on chain F because it is the neurotoxin that binds to acetylcholine receptors, it's the molecule that paralyzes you

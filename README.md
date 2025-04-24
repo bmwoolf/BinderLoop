@@ -89,4 +89,4 @@ pytest --cov=models --cov-report=html
     - E	    Acetylcholine receptor subunit gamma	    Receptor
     - F, G	Consensus short-chain α-neurotoxin (ScNtx)	Toxin (ligand)
 - Chain F (and G) are both the ScNtx toxin, the actual target we want to neutralize- the others are host receptor subunits
-- authors focused on chain F because it is the neurotoxin that binds to acetylcholine receptors, it's the molecule that paralyzes you
+- authors focused on chain F because it is the neurotoxin that binds to acetylcholine receptors (nAChRs), it's the molecule that paralyzes you

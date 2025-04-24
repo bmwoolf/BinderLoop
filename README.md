@@ -68,5 +68,5 @@ pip install -r requirements.txt
 pytest
 
 # Run tests with coverage
-pytest --cov=models --cov-report=html
+pytest --cov=scripts --cov-report=html
 ```

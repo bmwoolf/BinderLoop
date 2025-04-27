@@ -22,4 +22,4 @@ Notes
     - you compute the binding free energy (ΔG) between toxin and binder
     - lower ΔG = stronger interaction = better binding
     - do it right after predicting the binder + protein structures
-    
+- thread context switching is a primary bottleneck on large programs, which ours will be at scale
